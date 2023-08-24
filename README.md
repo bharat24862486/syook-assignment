@@ -19,7 +19,7 @@ To get started with this logistics management system, you'll need to set up the 
 1. Clone this repository.
 2. Install the required dependencies using `npm install`.
 3. Create a `.env` file with your MongoDB connection URL and any other environment variables you need.
-4. Run the server using `npm start`.
+4. Run the server using `npm run server`.
 
 ## API Endpoints
 
