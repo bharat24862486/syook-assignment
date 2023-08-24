@@ -10,9 +10,7 @@ This Logistics Management System is a software solution designed to streamline t
   - [Items](#items)
   - [Delivery Vehicles](#delivery-vehicles)
   - [Orders](#orders)
-- [Authentication](#authentication)
-- [Logging](#logging)
-- [Unit Tests](#unit-tests)
+
 
 ## Getting Started
 
