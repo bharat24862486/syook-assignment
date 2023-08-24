@@ -1,7 +1,6 @@
-
 const mongoose=require(`mongoose`)
 
-const CustomerSchema=mongoose.Schema({
+const customerSchema=mongoose.Schema({
     name:{type:String,required:true},
     city:{type:String,required:true},
     email:{type:String,required:true},
@@ -9,8 +8,6 @@ const CustomerSchema=mongoose.Schema({
     
 })
 
-const CustomerModel=mongoose.model("customer",CustomerSchema)
+const CustomerModel=mongoose.model("customer",customerSchema)
 
-module.exports={
-    CustomerModel
-}
+module.exports=CustomerModel

@@ -13,7 +13,7 @@ ItemRouter.get(`/`,async(req,res)=>{
     }
 })
 
-ItemRouter.post("/",async(req,res)=>{
+ItemRouter.post("/item_order",async(req,res)=>{
     
     try {
         let newItem=new ItemModel(req.body)
@@ -37,6 +37,5 @@ ItemRouter.patch("/:id",async(req,res)=>{
 })
 
 
-module.exports={
-    ItemRouter
-}
+module.exports=ItemRouter
+

@@ -12,7 +12,7 @@ CustomerRouter.get(`/`,async(req,res)=>{
    }
 })
 
-CustomerRouter.post(`/`,async(req,res)=>{
+CustomerRouter.post(`/customer_order`,async(req,res)=>{
     try {
         let newCustomer=new CustomerModel(req.body)
         await newCustomer.save()
@@ -22,6 +22,4 @@ CustomerRouter.post(`/`,async(req,res)=>{
     }
 })
 
-module.exports={
-    CustomerRouter
-}
+module.exports= CustomerRouter

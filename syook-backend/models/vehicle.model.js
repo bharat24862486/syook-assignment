@@ -1,7 +1,7 @@
 
 const mongoose=require(`mongoose`)
 
-const VehSchema=mongoose.Schema({
+const VehicleSchema=mongoose.Schema({
     registrationNumber:{type:String,unique:true,required:true},
     vehicleType:{type:String,enum:["bike","truck"],required:true},
     city:{type:String,required:true},
@@ -9,9 +9,8 @@ const VehSchema=mongoose.Schema({
     activeOrdersCount:{type:Number,default:0}
 })
 
-const VehModel=mongoose.model("vehicle",VehSchema)
+const VehcileModel=mongoose.model("vehicle",VehicleSchema)
 
-module.exports={
-VehModel
-}
+module.exports= VehcileModel
+
 

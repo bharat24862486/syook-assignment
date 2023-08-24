@@ -1,5 +1,5 @@
 const express=require(`express`)
-const { VehModel } = require("../models/vehicle.model")
+const VehcileModel = require("../models/vehicle.model")
 
 
 
@@ -15,16 +15,16 @@ VehicleRouter.get(`/`,async(req,res)=>{
    }
 })
 
-VehicleRouter.post("/",async(req,res)=>{
+VehicleRouter.post("/add_vehicle",async(req,res)=>{
 
    const {registrationNumber} =req.body
-   let exist=await VehModel.findOne({registrationNumber})
+   let exist=await VehcileModel.findOne({registrationNumber})
 
     try {
         if(exist){
-       res.send(`vehicle with this registeration already exist`)
+       res.send(`vehicle with this registeration number is already exist`)
         }else{
-            let newItem=new VehModel(req.body)
+            let newItem=new VehcileModel(req.body)
             await newItem.save()
             res.send("item added successfully")
         }
@@ -39,6 +39,5 @@ VehicleRouter.post("/",async(req,res)=>{
 
 
 
-module.exports={
-    VehicleRouter
-}
+module.exports=VehicleRouter
+
