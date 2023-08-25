@@ -1,6 +1,6 @@
 
 const express=require(`express`)
-const { ItemModel } = require("../models/items.model")
+const  ItemModel  = require("../models/items.model")
 
 const ItemRouter=express.Router()
 
