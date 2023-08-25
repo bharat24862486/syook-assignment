@@ -1,5 +1,5 @@
 
-const mongoose=require(`mongoose`)
+const mongoose= require(`mongoose`)
 
 const VehicleSchema=mongoose.Schema({
     registrationNumber:{type:String,unique:true,required:true},
